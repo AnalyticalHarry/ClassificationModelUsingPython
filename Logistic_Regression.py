@@ -122,3 +122,7 @@ class LogisticRegression:
         linear_model = np.dot(X, self.weights) + self.bias
         predictions = self.sigmoid(linear_model)
         return np.round(predictions)
+
+#Code developed by Hemant Thapa 
+#analyticalharry@gmail.com
+#Date: 22.11.2023
