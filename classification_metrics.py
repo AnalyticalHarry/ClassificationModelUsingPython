@@ -82,7 +82,7 @@ def confusion_matrix(y_true, y_pred):
     print("Wrong Predicted:", wrong_predictions, "cases")
     
     
-    #automated result 
+    #automation for accuracy
     if accuracy >= 0.80:
         print("Guidance: High accuracy (80% to 100%) suggests excellent model performance.")
     elif accuracy >= 0.75:
@@ -92,18 +92,32 @@ def confusion_matrix(y_true, y_pred):
     else:
         print("Guidance: The accuracy is below 60%. Strongly consider reviewing and improving the model.")
     
+    #automation fot precision
     if precision >= 0.80:
-        print("Guidance: High precision indicates a low false positive rate.")
+        print("Guidance: High precision (80% to 100%) indicates a low false positive rate.")
+    elif precision >= 0.75:
+        print("Guidance: Good precision (75% to 80%) indicates a relatively low false positive rate.")
+    elif precision >= 0.60:
+        print("Guidance: Consider reviewing precision (60% to 75%) to reduce false positives.")
     else:
-        print("Guidance: Precision is below the recommended threshold (>= 0.80). Check for false positives.")
+        print("Guidance: Precision is below 60%. Strongly consider reducing false positives.")
     
+    #automation for recall
     if recall >= 0.80:
-        print("Guidance: High recall indicates a low false negative rate.")
+        print("Guidance: High recall (80% to 100%) indicates a low false negative rate.")
+    elif recall >= 0.75:
+        print("Guidance: Good recall (75% to 80%) indicates a relatively low false negative rate.")
+    elif recall >= 0.60:
+        print("Guidance: Consider reviewing recall (60% to 75%) to reduce false negatives.")
     else:
-        print("Guidance: Recall is below the recommended threshold (>= 0.80). Check for false negatives.")
+        print("Guidance: Recall is below 60%. Strongly consider reducing false negatives.")
     
+    #automation for specificity
     if specificity >= 0.80:
-        print("Guidance: High specificity suggests a good ability to identify true negatives.")
+        print("Guidance: High specificity (80% to 100%) suggests a good ability to identify true negatives.")
+    elif specificity >= 0.75:
+        print("Guidance: Good specificity (75% to 80%) indicates a relatively good ability to identify true negatives.")
+    elif specificity >= 0.60:
+        print("Guidance: Consider reviewing specificity (60% to 75%) to improve the ability to identify true negatives.")
     else:
-        print("Guidance: Specificity is below the recommended threshold (>= 0.80). Check for false negatives.")
-
+        print("Guidance: Specificity is below 60%. Strongly consider improving the ability to identify true negatives.")
