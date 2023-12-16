@@ -75,7 +75,7 @@ def confusion_matrix(y_true, y_pred):
     print("Specificity:", specificity)
     
     #errors 
-    print("\nAdditional Information:")
+    print("\nCorrect & Incorrect Prediction:")
     print("Type 1 Error (False Positives):", type_1_error, "cases")
     print("Type 2 Error (False Negatives):", type_2_error, "cases")
     print("Correctly Predicted:", correct_predictions, "cases")
