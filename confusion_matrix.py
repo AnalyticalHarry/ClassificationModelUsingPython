@@ -1,3 +1,5 @@
+import numpy as np
+
 #confusion matrix 
 def confusion_matrix(y_true, y_pred):
     #true positive cases (actual 1, predicted 1)
