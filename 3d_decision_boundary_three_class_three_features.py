@@ -26,7 +26,7 @@ def decision_boundaries(X, y, model, elevations=[10, 30, 60, 70, 80, 30], azimut
     fig, axes = plt.subplots(2, 3, subplot_kw={'projection': '3d'}, figsize=(18, 12)) 
     axes = axes.flatten()
     for ax, elev, azim in zip(axes, elevations, azimuths):
-        decision_boundary_3d(X, y, model, ax, elev=elev, azim=azim, title=f"SVM Decision Boundary (Elev={elev}, Azim={azim})", xlabel="Feature 1", ylabel="Feature 2", zlabel="Feature 3", class_labels=class_labels)
+        decision_boundary_3d(X, y, model, ax, elev=elev, azim=azim, title=f"Decision Boundary (Elev={elev}, Azim={azim})", xlabel="Feature 1", ylabel="Feature 2", zlabel="Feature 3", class_labels=class_labels)
     plt.show()
 
 
