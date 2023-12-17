@@ -29,4 +29,4 @@ def decision_boundaries(X, y, model, elevations=[10, 30, 60, 70, 80, 30], azimut
         decision_boundary_3d(X, y, model, ax, elev=elev, azim=azim, title=f"Decision Boundary (Elev={elev}, Azim={azim})", xlabel="Feature 1", ylabel="Feature 2", zlabel="Feature 3")
     plt.show()
 
-#decision_boundaries(X_random, y_random, clf)
+#decision_boundaries(X, y, clf)
