@@ -47,7 +47,13 @@ def confusion_matrix(y_true, y_pred):
     false_positive = np.sum((y_true == 0) & (y_pred == 1))
     #false negative cases (actual 1, predicted 0)
     false_negative = np.sum((y_true == 1) & (y_pred == 0))
-
+    
+    print("True Positives:", true_positive)
+    print("True Negatives:", true_negative)
+    print("False Positives:", false_positive)
+    print("False Negatives:", false_negative)
+    print()
+    
     #Type 1 error (false positives)
     type_1_error = false_positive
     #Type 2 error (false negatives)
