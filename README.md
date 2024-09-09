@@ -36,5 +36,5 @@ The choice of classification model depends on several factors, including the siz
 - **Complex Models** like Random Forests or SVMs might be used for problems requiring higher accuracy and the ability to handle large amounts of data.
 
 
-## Author: Hemant Thapa
-## Email: hemantthapa1998@gmail.com
+### Author: Hemant Thapa
+### Email: hemantthapa1998@gmail.com
